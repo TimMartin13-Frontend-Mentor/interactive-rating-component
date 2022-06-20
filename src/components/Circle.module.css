@@ -1,0 +1,24 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-color: var(--notso-dark-blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  color: var(--medium-grey);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.circle:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.circle:focus {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
