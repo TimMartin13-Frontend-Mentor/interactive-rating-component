@@ -17,7 +17,7 @@
 }
 
 .icon {
-  width: 54%;
+  width: 9rem;
 }
 
 .rated {
@@ -43,4 +43,42 @@
   font-weight: 400;
   padding-bottom: 1.7rem;
   text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 20.44rem;
+    height: 22.5rem;
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (min-width: 461px) {
+  .card {
+    max-width: 25.63rem;
+    height: 25.81rem;
+    margin: 12.19rem auto;
+    padding: 2rem 1.7rem 1rem;
+  }
+
+  .icon {
+    width: 10rem;
+  }
+
+  .rated {
+    margin-top: 2.1rem;
+    padding: 0.5rem 0.9rem 0.3rem;
+    font-size: 1rem;
+  }
+
+  .heading {
+    padding: 0.7rem;
+    font-size: 1.8rem;
+  }
+
+  .copy {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-bottom: 1.5rem;
+  }
 }

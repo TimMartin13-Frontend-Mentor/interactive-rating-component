@@ -6,12 +6,22 @@ import ThankYouCard from "./components/ThankYouCard";
 
 function App() {
   
-  const [rated, setRated] = useState(true);
+  const [rated, setRated] = useState(false);
+  const [rating, setRating] = useState();
+
+  const rateHandler = () => {
+    setRated(true);
+  };
 
   return (
     <div className="App">
       <main>
-        { rated ? <ThankYouCard rating={ "4" }/> : <RatingCard /> }
+        { rated ? <ThankYouCard rating={ rating }/> 
+                : <RatingCard 
+                    onProcess={ rateHandler }
+                    rating={ rating }
+                    setRating={ setRating }
+                  /> }
       </main>
       <footer>
         <Attribution />

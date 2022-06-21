@@ -1,9 +1,13 @@
 import React from "react";
 import circleStyles from "./Circle.module.css"
 
-function Circle( { value }) {
+function Circle( { value, rating, setRating }) {
   return (
-    <button href="#" className={ circleStyles.circle }>
+    <button 
+      className={ circleStyles.circle }
+      rating={ rating }
+      onClick={() => setRating(value)}  
+    >
       { value }
     </button>
   )

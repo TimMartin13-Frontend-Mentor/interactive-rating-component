@@ -1,4 +1,5 @@
 .circle {
+  font-family: "Overpass", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,4 +22,14 @@
 .circle:focus {
   background-color: var(--medium-grey);
   color: var(--white);
+}
+
+@media screen and (min-width: 461px) {
+  .circle {
+    width: 3.13rem;
+    height: 3.13rem;
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
 }
