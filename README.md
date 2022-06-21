@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Frontend Mentor - Interactive rating component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+Desktop Layout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Desktop](./public/images/screenshots/desktop_layout.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Thank you card
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Thank you card](./public/images/screenshots/thank_you_card.png)
 
-### `npm run eject`
+Hover states
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Hover states](./public/images/screenshots/hover_states.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Selected number state
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Selected](./public/images/screenshots/selected.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [Github Pages](https://timmartin13-frontend-mentor.github.io/interactive-rating-component/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## My process
 
-### Code Splitting
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Semantic HTML5 markup
+- CSS modules
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### What I learned
 
-### Making a Progressive Web App
+I learned that CSS modules are nice but styled components look cleaner throughout the code. Also, iterating through a loop was an interesting adventure in React. Creating an array and iterating through it seemed to be the best choice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```js
+const numrows = [1, 2, 3, 4, 5]; 
 
-### Advanced Configuration
+{numrows.map(item => (
+          <Circle 
+            value={ item } 
+            key={ item }
+            rating={ rating }
+            setRating={ setRating }
+          />
+        ))}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Continued development
 
-### Deployment
+I am definitely going to look into styled components for my next challenge, I like how organized it look in React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Useful resources
 
-### `npm run build` fails to minify
+- [Hosting React on Github pages](https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/) - This helped me to get my React app up on github pages
+- [Separating CSS into modules](https://bootcamp.uxdesign.cc/using-css-modules-in-react-cc17f7c81247) - A walkthrough of how to separate your CSS into component based modules.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+- Website - [My portfolio](https://timmartin13.github.io/react-portfolio/)
+- Frontend Mentor - [@TimMartin13](https://www.frontendmentor.io/profile/TimMartin13)
