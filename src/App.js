@@ -7,10 +7,12 @@ import ThankYouCard from "./components/ThankYouCard";
 function App() {
   
   const [rated, setRated] = useState(false);
-  const [rating, setRating] = useState();
+  const [rating, setRating] = useState("0");
 
   const rateHandler = () => {
-    setRated(true);
+    if (rating !== "0") {
+      setRated(true);
+    }
   };
 
   return (
